@@ -4,12 +4,14 @@ import React, { useState } from 'react';
 import NavBar from '../components/navbar';
 
 //bootstrap imports
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/row';
-import Col from 'react-bootstrap/col';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
+import {
+  Container,
+  Row,
+  Col,
+  InputGroup,
+  FormControl,
+  Button,
+} from 'react-bootstrap';
 
 import { useNavigate } from 'react-router-dom';
 

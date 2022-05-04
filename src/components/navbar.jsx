@@ -1,9 +1,8 @@
 import React from 'react';
 
 //ui imports
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/container';
-import Nav from 'react-bootstrap/Nav';
+
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const NavBar = () => {
   return (

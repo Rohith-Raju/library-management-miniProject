@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Card from 'react-bootstrap/Card';
-
-import Button from 'react-bootstrap/button';
+import { Card, Button } from 'react-bootstrap';
 
 //component import
 import NavBar from '../components/navbar';
