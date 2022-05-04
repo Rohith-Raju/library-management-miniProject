@@ -16,7 +16,7 @@ const NavBar = () => {
               gap: '5vw',
             }}
           >
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/all">All books</Nav.Link>
           </Nav>
         </Container>

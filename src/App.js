@@ -13,9 +13,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />}>
-            <Route path="all" element={<All />} />
-          </Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="all" element={<All />} />
           <Route exact path="/book/:id" element={<Query />} />
         </Routes>
       </BrowserRouter>
