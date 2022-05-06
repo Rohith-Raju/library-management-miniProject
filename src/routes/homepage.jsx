@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 //ui imports
 import NavBar from '../components/navbar';
+import "../Styles/homepage.css";
+
 
 //bootstrap imports
 import {
@@ -29,24 +31,25 @@ const Homepage = () => {
       <NavBar />
       <Container
         style={{
-          marginTop: '10rem',
+          marginTop: '7rem',
           paddingBottom: '5rem',
+          textAlign:'center'
         }}
         fluid="md"
       >
         <Row>
           <Col
             style={{
-              fontSize: '2rem',
+              fontSize: '3rem',
               textAlign: 'center',
             }}
           >
-            What are you looking for today ?
+           What are you looking for today ?
           </Col>
         </Row>
         <Row
           style={{
-            paddingTop: '5rem',
+            paddingTop: '4rem',
           }}
         >
           <Col>
@@ -54,7 +57,7 @@ const Homepage = () => {
               <FormControl
                 onChange={(e) => setInput(e.target.value)}
                 size="lg"
-                placeholder="Enter any Categoty"
+                placeholder="Enter any Category"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
@@ -71,38 +74,40 @@ const Homepage = () => {
         </Row>
         <Container
           style={{
-            marginTop: '8rem',
-            paddingBottom: '4rem',
+            marginTop: '2rem',
+            paddingBottom: '3rem',
           }}
         >
-          <Row>
+          <hr></hr>
+          <Row style={{
+            marginTop: '3rem',
+            textAlign: 'center',
+          }}>
             <Col>
-              <h3>Java</h3>
+              <h3><b>Java </b></h3>
+  
             </Col>
             <Col>
-              <h3>Internet</h3>
+              <h3><b>Internet</b></h3>
             </Col>
             <Col>
-              <h3>Microsoft</h3>
+              <h3><b>Microsoft</b></h3>
             </Col>
             <Col>
-              <h3>Web Development</h3>
+              <h3><b>Web Development</b></h3>
             </Col>
           </Row>
+          <Container style={{
+            backgroundColor:'#D4ECDD'
+          }}>
           <Row
             style={{
-              paddingTop: '5rem',
+              paddingTop: '3rem',
             }}
           >
             <Col>
               <img
                 src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/davis.jpg"
-                alt="java"
-              />
-            </Col>
-            <Col>
-              <img
-                src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/deshmukh2.jpg"
                 alt="java"
               />
             </Col>
@@ -115,6 +120,12 @@ const Homepage = () => {
             <Col>
               <img
                 src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/begin.jpg"
+                alt="java"
+              />
+            </Col>
+            <Col>
+              <img
+                src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/deshmukh2.jpg"
                 alt="java"
               />
             </Col>
@@ -148,18 +159,26 @@ const Homepage = () => {
                 alt="java"
               />
             </Col>
-          </Row>
-        </Container>
+            </Row>
+            </Container>
+        </Container >
+        <hr style={{
+         margin:'2rem'
+        }}></hr>
         <Row>
-          <Col>
+          <Col >
             <a href="/all">
-              <h5
+              <h3
                 style={{
                   textAlign: 'center',
+                  backgroundColor: '#345B63'
                 }}
-              >
-                Explore more ➡️
-              </h5>
+              ><button type="button" class="btn  btn-lg btn-block"><h3  style={{
+                textAlign: 'center',
+                  color: 'white',
+              }}>Explore more</h3></button>
+                
+              </h3>
             </a>
           </Col>
         </Row>

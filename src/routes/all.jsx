@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Container } from 'react-bootstrap';
 
 //component import
 import NavBar from '../components/navbar';
@@ -25,15 +25,20 @@ const All = () => {
       <h1
         style={{
           textAlign: 'center',
-          marginTop: '3rem',
+          marginTop: '3rem'
         }}
       >
         Available books
       </h1>
-      <GridSystem colCount={4} md={3}>
+      
+      <GridSystem colCount={4} md={3} >
         {books.map((key) => {
           return (
-            <Card style={{ width: '15rem' }}>
+            <Card style={{
+              margin: '2rem',
+              marginTop:'0rem',
+              width: '16rem',
+            }}>
               <Card.Img
                 style={{
                   maxHeight: '15rem',
@@ -42,10 +47,15 @@ const All = () => {
                 src={key.thumbnailUrl}
               />
               <Card.Body>
-                <Card.Title>{truncateString(key.title, 18)}</Card.Title>
-                <Button
+                <Card.Title style={{
+                  textAlign:'center'
+                }}>{truncateString(key.title, 18)}</Card.Title>
+                <Button 
                   onClick={(e) => alert('You can collect your book in library')}
-                  variant="primary"
+                  variant="btn btn-outline-primary"
+                  style={{
+                    marginLeft:'4rem'
+                  }}
                 >
                   Issue this
                 </Button>
@@ -54,7 +64,16 @@ const All = () => {
           );
         })}
       </GridSystem>
+      <Container style={{
+        padding: '2rem',
+        textAlign:'center',
+        width:'50rem'
+      }}>
+        Did not find what you're looking for? Give us feedback on how we can improvise.
+      </Container>
+
     </div>
+
   );
 };
 export default All;
